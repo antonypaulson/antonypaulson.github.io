@@ -60,33 +60,39 @@ a.link:hover{ text-decoration:underline; }
 .menu-toggle{
   display:none;
   flex-direction:column;
-  gap:5px;
-  background:transparent;
-  border:none;
+  gap:6px;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--line);
+  border-radius:8px;
   cursor:pointer;
-  padding:8px;
+  padding:10px 8px;
   z-index:60;
-  min-width:40px;
-  min-height:40px;
+  min-width:44px;
+  min-height:44px;
   justify-content:center;
   align-items:center;
 }
+.menu-toggle:hover{
+  background:rgba(255,255,255,.08);
+}
 .menu-toggle span{
-  width:24px;
-  height:2px;
+  width:26px;
+  height:3px;
   background:var(--text);
   border-radius:2px;
   transition:all 0.3s ease;
   display:block;
+  flex-shrink:0;
 }
 .menu-toggle[aria-expanded="true"] span:nth-child(1){
-  transform:rotate(45deg) translate(7px, 7px);
+  transform:rotate(45deg) translate(8px, 8px);
 }
 .menu-toggle[aria-expanded="true"] span:nth-child(2){
   opacity:0;
+  transform:translateX(-10px);
 }
 .menu-toggle[aria-expanded="true"] span:nth-child(3){
-  transform:rotate(-45deg) translate(7px, -7px);
+  transform:rotate(-45deg) translate(8px, -8px);
 }
 
 .links{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
