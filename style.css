@@ -122,24 +122,49 @@ button:focus-visible{
   display:flex;
   align-items:center;
   gap:6px;
-  padding:8px 12px;
-  background:rgba(255,255,255,.05);
-  border:1px solid var(--line);
+  padding:8px 10px;
+  background:transparent;
+  border:none;
   border-radius:999px;
-  color:var(--text);
+  color:var(--muted);
   cursor:pointer;
   font-size:13px;
-  font-weight:600;
+  font-weight:500;
   transition:all 0.2s ease;
 }
 
 .lang-btn:hover{
-  background:rgba(255,255,255,.08);
-  border-color:rgba(255,255,255,.2);
+  color:var(--text);
+  background:rgba(255,255,255,.05);
+}
+
+.lang-flag{
+  font-size:18px;
+  line-height:1;
+  display:inline-block;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.lang-code{
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.5px;
 }
 
 .lang-btn svg{
   transition:transform 0.2s ease;
+  opacity:0.7;
+  margin-left:2px;
+}
+
+.lang-btn:hover svg{
+  opacity:1;
 }
 
 .language-switcher.active .lang-btn svg,
@@ -172,7 +197,9 @@ button:focus-visible{
 }
 
 .lang-option{
-  display:block;
+  display:flex;
+  align-items:center;
+  gap:10px;
   width:100%;
   padding:10px 12px;
   background:transparent;
@@ -183,6 +210,17 @@ button:focus-visible{
   cursor:pointer;
   font-size:14px;
   transition:all 0.2s ease;
+}
+
+.option-flag{
+  font-size:20px;
+  line-height:1;
+  width:24px;
+  height:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
 }
 
 .lang-option:hover{

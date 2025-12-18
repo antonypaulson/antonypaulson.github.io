@@ -43,16 +43,29 @@
         <a href="#volunteering" data-i18n="nav.volunteering">Volunteering</a>
         <div class="language-switcher">
           <button class="lang-btn" aria-label="Language selector" id="langBtn">
-            <span id="currentLang">EN</span>
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 4.5l3 3 3-3"/>
+            <span class="lang-flag" id="currentFlag">🇺🇸</span>
+            <span class="lang-code" id="currentLang">EN</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2.5 3.5l2.5 2.5 2.5-2.5"/>
             </svg>
           </button>
           <div class="lang-menu" id="langMenu">
-            <button class="lang-option" data-lang="en">English</button>
-            <button class="lang-option" data-lang="es">Español</button>
-            <button class="lang-option" data-lang="de">Deutsch</button>
-            <button class="lang-option" data-lang="hi">हिंदी</button>
+            <button class="lang-option" data-lang="en" data-flag="🇺🇸">
+              <span class="option-flag">🇺🇸</span>
+              <span>English</span>
+            </button>
+            <button class="lang-option" data-lang="es" data-flag="🇪🇸">
+              <span class="option-flag">🇪🇸</span>
+              <span>Español</span>
+            </button>
+            <button class="lang-option" data-lang="de" data-flag="🇩🇪">
+              <span class="option-flag">🇩🇪</span>
+              <span>Deutsch</span>
+            </button>
+            <button class="lang-option" data-lang="hi" data-flag="🇮🇳">
+              <span class="option-flag">🇮🇳</span>
+              <span>हिंदी</span>
+            </button>
           </div>
         </div>
         <a class="btn" href="#contact" data-i18n="nav.contact">Contact</a>
@@ -545,9 +558,16 @@
       localStorage.setItem('preferredLanguage', lang);
       document.documentElement.lang = lang;
       
-      // Update language button
-      const langCodes = { en: 'EN', es: 'ES', de: 'DE', hi: 'HI' };
-      document.getElementById('currentLang').textContent = langCodes[lang] || 'EN';
+      // Update language button with flag and code
+      const langData = { 
+        en: { code: 'EN', flag: '🇺🇸' }, 
+        es: { code: 'ES', flag: '🇪🇸' }, 
+        de: { code: 'DE', flag: '🇩🇪' }, 
+        hi: { code: 'HI', flag: '🇮🇳' } 
+      };
+      const current = langData[lang] || langData.en;
+      document.getElementById('currentFlag').textContent = current.flag;
+      document.getElementById('currentLang').textContent = current.code;
       
       // Translate all elements with data-i18n attribute
       document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -584,6 +604,7 @@
       option.addEventListener('click', (e) => {
         e.stopPropagation();
         const lang = option.getAttribute('data-lang');
+        const flag = option.getAttribute('data-flag');
         setLanguage(lang);
       });
     });
