@@ -36,12 +36,26 @@
       </button>
 
       <nav class="links" aria-label="Primary navigation">
-        <a href="#experience">Experience</a>
-        <a href="#impact">Impact</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#volunteering">Volunteering</a>
-        <a class="btn" href="#contact">Contact</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#impact" data-i18n="nav.impact">Impact</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#volunteering" data-i18n="nav.volunteering">Volunteering</a>
+        <div class="language-switcher">
+          <button class="lang-btn" aria-label="Language selector" id="langBtn">
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 4.5l3 3 3-3"/>
+            </svg>
+          </button>
+          <div class="lang-menu" id="langMenu">
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="es">Español</button>
+            <button class="lang-option" data-lang="de">Deutsch</button>
+            <button class="lang-option" data-lang="hi">हिंदी</button>
+          </div>
+        </div>
+        <a class="btn" href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -52,18 +66,18 @@
       <div class="container heroGrid">
         <div class="heroLeft">
           <div class="heroContent">
-            <p class="kicker">Manager • Monetization Analytics • Retail Media</p>
+            <p class="kicker" data-i18n="hero.kicker">Manager • Monetization Analytics • Retail Media</p>
 
-            <h1>Driving revenue growth through data-driven monetization strategies.</h1>
+            <h1 data-i18n="hero.title">Driving revenue growth through data-driven monetization strategies.</h1>
 
-            <p class="lead">
+            <p class="lead" data-i18n="hero.lead">
               Analytics leader specializing in retail media monetization, yield optimization, and product analytics. 
               I transform complex data into actionable insights that drive business decisions and revenue growth.
             </p>
 
             <div class="cta">
-              <a class="btn" href="#experience">View Experience</a>
-              <a class="btn ghost" href="#contact">Connect</a>
+              <a class="btn" href="#experience" data-i18n="hero.viewExperience">View Experience</a>
+              <a class="btn ghost" href="#contact" data-i18n="hero.connect">Connect</a>
             </div>
 
             <div class="chips" role="list" aria-label="Highlights">
@@ -80,7 +94,7 @@
             <img src="profile-photo.jpg" alt="Antony Paulson Chazhoor" class="heroImage" />
           </div>
           <div class="panel">
-            <p class="panelTitle">Professional Recommendations</p>
+            <p class="panelTitle" data-i18n="hero.recommendations">Professional Recommendations</p>
 
             <div class="quote">
               <p>"Delivers exceptional results with both speed and quality. Combines strong analytical capabilities with deep business acumen."</p>
@@ -105,8 +119,8 @@
     <section class="section" id="experience">
       <div class="container">
         <div class="sectionHead">
-          <h2>Professional Experience</h2>
-          <p class="muted">Progressive leadership in retail media analytics with a strong technical foundation.</p>
+          <h2 data-i18n="sections.experience">Professional Experience</h2>
+          <p class="muted" data-i18n="sections.experienceDesc">Progressive leadership in retail media analytics with a strong technical foundation.</p>
         </div>
 
         <div class="timeline">
@@ -225,8 +239,8 @@
     <section class="section" id="impact">
       <div class="container">
         <div class="sectionHead">
-          <h2>Key Achievements</h2>
-          <p class="muted">Measurable impact across analytics, engineering, and business outcomes.</p>
+          <h2 data-i18n="sections.impact">Key Achievements</h2>
+          <p class="muted" data-i18n="sections.impactDesc">Measurable impact across analytics, engineering, and business outcomes.</p>
         </div>
 
         <div class="grid cards">
@@ -269,8 +283,8 @@
     <section class="section" id="skills">
       <div class="container">
         <div class="sectionHead">
-          <h2>Core Competencies</h2>
-          <p class="muted">Technical expertise and analytical capabilities.</p>
+          <h2 data-i18n="sections.skills">Core Competencies</h2>
+          <p class="muted" data-i18n="sections.skillsDesc">Technical expertise and analytical capabilities.</p>
         </div>
 
         <div class="grid two">
@@ -307,8 +321,8 @@
     <section class="section" id="education">
       <div class="container">
         <div class="sectionHead">
-          <h2>Education</h2>
-          <p class="muted">Advanced degrees in analytics, business administration, and engineering.</p>
+          <h2 data-i18n="sections.education">Education</h2>
+          <p class="muted" data-i18n="sections.educationDesc">Advanced degrees in analytics, business administration, and engineering.</p>
         </div>
 
         <div class="grid cards">
@@ -334,8 +348,8 @@
     <section class="section" id="volunteering">
       <div class="container">
         <div class="sectionHead">
-          <h2>Community Engagement</h2>
-          <p class="muted">Dedicated service to community and faith-based organizations.</p>
+          <h2 data-i18n="sections.volunteering">Community Engagement</h2>
+          <p class="muted" data-i18n="sections.volunteeringDesc">Dedicated service to community and faith-based organizations.</p>
         </div>
 
         <div class="card">
@@ -354,8 +368,8 @@
     <section class="section" id="contact">
       <div class="container">
         <div class="sectionHead">
-          <h2>Contact</h2>
-          <p class="muted">Open to discussing opportunities and collaborations.</p>
+          <h2 data-i18n="sections.contact">Contact</h2>
+          <p class="muted" data-i18n="sections.contactDesc">Open to discussing opportunities and collaborations.</p>
         </div>
 
         <div class="grid two">
@@ -390,6 +404,194 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Translation system
+    const translations = {
+      en: {
+        nav: {
+          experience: "Experience",
+          impact: "Impact",
+          skills: "Skills",
+          education: "Education",
+          volunteering: "Volunteering",
+          contact: "Contact"
+        },
+        hero: {
+          kicker: "Manager • Monetization Analytics • Retail Media",
+          title: "Driving revenue growth through data-driven monetization strategies.",
+          lead: "Analytics leader specializing in retail media monetization, yield optimization, and product analytics. I transform complex data into actionable insights that drive business decisions and revenue growth.",
+          viewExperience: "View Experience",
+          connect: "Connect",
+          recommendations: "Professional Recommendations"
+        },
+        sections: {
+          experience: "Professional Experience",
+          experienceDesc: "Progressive leadership in retail media analytics with a strong technical foundation.",
+          impact: "Key Achievements",
+          impactDesc: "Measurable impact across analytics, engineering, and business outcomes.",
+          skills: "Core Competencies",
+          skillsDesc: "Technical expertise and analytical capabilities.",
+          education: "Education",
+          educationDesc: "Advanced degrees in analytics, business administration, and engineering.",
+          volunteering: "Community Engagement",
+          volunteeringDesc: "Dedicated service to community and faith-based organizations.",
+          contact: "Contact",
+          contactDesc: "Open to discussing opportunities and collaborations."
+        }
+      },
+      es: {
+        nav: {
+          experience: "Experiencia",
+          impact: "Impacto",
+          skills: "Habilidades",
+          education: "Educación",
+          volunteering: "Voluntariado",
+          contact: "Contacto"
+        },
+        hero: {
+          kicker: "Gerente • Análisis de Monetización • Medios Minoristas",
+          title: "Impulsando el crecimiento de ingresos a través de estrategias de monetización basadas en datos.",
+          lead: "Líder en análisis especializado en monetización de medios minoristas, optimización de rendimiento y análisis de productos. Transformo datos complejos en insights accionables que impulsan decisiones comerciales y crecimiento de ingresos.",
+          viewExperience: "Ver Experiencia",
+          connect: "Conectar",
+          recommendations: "Recomendaciones Profesionales"
+        },
+        sections: {
+          experience: "Experiencia Profesional",
+          experienceDesc: "Liderazgo progresivo en análisis de medios minoristas con una base técnica sólida.",
+          impact: "Logros Clave",
+          impactDesc: "Impacto medible en análisis, ingeniería y resultados comerciales.",
+          skills: "Competencias Principales",
+          skillsDesc: "Experiencia técnica y capacidades analíticas.",
+          education: "Educación",
+          educationDesc: "Títulos avanzados en análisis, administración de empresas e ingeniería.",
+          volunteering: "Compromiso Comunitario",
+          volunteeringDesc: "Servicio dedicado a organizaciones comunitarias y basadas en la fe.",
+          contact: "Contacto",
+          contactDesc: "Abierto a discutir oportunidades y colaboraciones."
+        }
+      },
+      de: {
+        nav: {
+          experience: "Erfahrung",
+          impact: "Wirkung",
+          skills: "Fähigkeiten",
+          education: "Bildung",
+          volunteering: "Ehrenamt",
+          contact: "Kontakt"
+        },
+        hero: {
+          kicker: "Manager • Monetarisierungsanalyse • Einzelhandelsmedien",
+          title: "Umsatzwachstum durch datengesteuerte Monetarisierungsstrategien vorantreiben.",
+          lead: "Analytics-Leiter mit Spezialisierung auf Einzelhandelsmedien-Monetarisierung, Yield-Optimierung und Produktanalysen. Ich transformiere komplexe Daten in umsetzbare Erkenntnisse, die Geschäftsentscheidungen und Umsatzwachstum vorantreiben.",
+          viewExperience: "Erfahrung anzeigen",
+          connect: "Verbinden",
+          recommendations: "Professionelle Empfehlungen"
+        },
+        sections: {
+          experience: "Berufserfahrung",
+          experienceDesc: "Fortschrittliche Führung in Einzelhandelsmedien-Analysen mit starker technischer Grundlage.",
+          impact: "Wichtige Erfolge",
+          impactDesc: "Messbare Auswirkungen in Analyse, Engineering und Geschäftsergebnissen.",
+          skills: "Kernkompetenzen",
+          skillsDesc: "Technische Expertise und analytische Fähigkeiten.",
+          education: "Bildung",
+          educationDesc: "Fortgeschrittene Abschlüsse in Analyse, Betriebswirtschaft und Ingenieurwesen.",
+          volunteering: "Gemeinschaftliches Engagement",
+          volunteeringDesc: "Hingebungsvoller Dienst an Gemeinschafts- und glaubensbasierten Organisationen.",
+          contact: "Kontakt",
+          contactDesc: "Offen für Diskussionen über Möglichkeiten und Zusammenarbeit."
+        }
+      },
+      hi: {
+        nav: {
+          experience: "अनुभव",
+          impact: "प्रभाव",
+          skills: "कौशल",
+          education: "शिक्षा",
+          volunteering: "स्वैच्छिक सेवा",
+          contact: "संपर्क"
+        },
+        hero: {
+          kicker: "प्रबंधक • मुद्रीकरण विश्लेषण • खुदरा मीडिया",
+          title: "डेटा-संचालित मुद्रीकरण रणनीतियों के माध्यम से राजस्व वृद्धि को बढ़ावा देना।",
+          lead: "खुदरा मीडिया मुद्रीकरण, उपज अनुकूलन और उत्पाद विश्लेषण में विशेषज्ञता वाला विश्लेषण नेता। मैं जटिल डेटा को व्यावहारिक अंतर्दृष्टि में बदलता हूं जो व्यावसायिक निर्णय और राजस्व वृद्धि को बढ़ावा देता है।",
+          viewExperience: "अनुभव देखें",
+          connect: "जुड़ें",
+          recommendations: "पेशेवर सिफारिशें"
+        },
+        sections: {
+          experience: "पेशेवर अनुभव",
+          experienceDesc: "मजबूत तकनीकी नींव के साथ खुदरा मीडिया विश्लेषण में प्रगतिशील नेतृत्व।",
+          impact: "मुख्य उपलब्धियां",
+          impactDesc: "विश्लेषण, इंजीनियरिंग और व्यावसायिक परिणामों में मापने योग्य प्रभाव।",
+          skills: "मुख्य योग्यताएं",
+          skillsDesc: "तकनीकी विशेषज्ञता और विश्लेषणात्मक क्षमताएं।",
+          education: "शिक्षा",
+          educationDesc: "विश्लेषण, व्यवसाय प्रशासन और इंजीनियरिंग में उन्नत डिग्री।",
+          volunteering: "सामुदायिक सगाई",
+          volunteeringDesc: "सामुदायिक और विश्वास-आधारित संगठनों के लिए समर्पित सेवा।",
+          contact: "संपर्क",
+          contactDesc: "अवसरों और सहयोग पर चर्चा करने के लिए खुला।"
+        }
+      }
+    };
+
+    // Language management
+    let currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('preferredLanguage', lang);
+      document.documentElement.lang = lang;
+      
+      // Update language button
+      const langCodes = { en: 'EN', es: 'ES', de: 'DE', hi: 'HI' };
+      document.getElementById('currentLang').textContent = langCodes[lang] || 'EN';
+      
+      // Translate all elements with data-i18n attribute
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let translation = translations[lang];
+        
+        for (const k of keys) {
+          translation = translation?.[k];
+        }
+        
+        if (translation) {
+          element.textContent = translation;
+        }
+      });
+      
+      // Close language menu
+      document.getElementById('langMenu').classList.remove('active');
+    }
+
+    // Initialize language
+    setLanguage(currentLang);
+
+    // Language switcher functionality
+    const langBtn = document.getElementById('langBtn');
+    const langMenu = document.getElementById('langMenu');
+
+    langBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.lang-option').forEach(option => {
+      option.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const lang = option.getAttribute('data-lang');
+        setLanguage(lang);
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', () => {
+      langMenu.classList.remove('active');
+    });
 
     // Smooth scrolling with offset for sticky header
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
