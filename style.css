@@ -121,50 +121,40 @@ button:focus-visible{
 .lang-btn{
   display:flex;
   align-items:center;
-  gap:6px;
-  padding:8px 10px;
-  background:transparent;
-  border:none;
-  border-radius:999px;
-  color:var(--muted);
+  justify-content:center;
+  width:40px;
+  height:40px;
+  padding:0;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--line);
+  border-radius:50%;
+  color:var(--text);
   cursor:pointer;
-  font-size:13px;
-  font-weight:500;
   transition:all 0.2s ease;
+  position:relative;
 }
 
 .lang-btn:hover{
-  color:var(--text);
-  background:rgba(255,255,255,.05);
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.2);
+  transform:scale(1.05);
 }
 
 .lang-flag{
-  font-size:18px;
+  font-size:20px;
   line-height:1;
-  display:inline-block;
-  width:20px;
-  height:20px;
-  border-radius:50%;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
 }
 
 .lang-code{
-  font-size:12px;
-  font-weight:600;
-  letter-spacing:0.5px;
+  display:none;
 }
 
 .lang-btn svg{
-  transition:transform 0.2s ease;
-  opacity:0.7;
-  margin-left:2px;
-}
-
-.lang-btn:hover svg{
-  opacity:1;
+  display:none;
 }
 
 .language-switcher.active .lang-btn svg,
@@ -679,13 +669,18 @@ h3{ margin:0; font-size:16px; }
   }
   
   .language-switcher{
-    width:100%;
+    width:auto;
+  }
+  
+  .lang-btn{
+    width:40px;
+    height:40px;
   }
   
   .lang-menu{
-    right:auto;
-    left:0;
-    width:100%;
+    right:0;
+    left:auto;
+    width:160px;
   }
   
   .name{ display:none; }
