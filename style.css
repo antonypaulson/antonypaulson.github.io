@@ -556,6 +556,35 @@ h3{ margin:0; font-size:16px; }
   font-size:12px;
 }
 
+.subRole{
+  margin-top:20px;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.subRole:first-of-type{
+  margin-top:12px;
+  padding-top:12px;
+}
+.subRoleHeader{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
+.subRole h4{
+  margin:0;
+  font-size:15px;
+  font-weight:650;
+  color:rgba(255,255,255,.9);
+}
+.subRoleDate{
+  color:var(--muted);
+  font-size:12px;
+  white-space:nowrap;
+}
+
 .bullets{ margin:10px 0 0; padding-left:18px; color:var(--muted); }
 
 .tagRow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
