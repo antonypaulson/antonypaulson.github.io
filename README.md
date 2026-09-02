@@ -30,7 +30,12 @@ A modern, responsive portfolio website showcasing professional experience, skill
 portfolio-site/
 ├── index.html          # Main HTML file
 ├── style.css           # All styles and responsive design
+├── site.js             # Navigation, i18n, and progressive enhancement
+├── profile-photo.webp  # Optimized profile photo (modern browsers)
+├── profile-photo.jpg   # JPEG fallback / Open Graph image
+├── favicon.svg         # Site icon
 ├── CNAME               # Custom domain configuration
+├── LICENSE             # MIT License
 └── README.md           # This file
 ```
 

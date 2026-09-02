@@ -5,18 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Antony Paulson Chazhoor — Monetization Analytics</title>
   <meta name="description" content="Antony Paulson Chazhoor — Manager, Monetization Analytics (Retail Media). Yield insights, measurement, and analytics leadership." />
+  <meta name="author" content="Antony Paulson Chazhoor" />
+  <meta name="theme-color" content="#0f1419" />
+  <meta name="color-scheme" content="dark" />
 
-  <!-- Canonical (works once HTTPS is live; fine to keep now) -->
   <link rel="canonical" href="https://www.antonypaulson.com/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
-  <!-- Open Graph (LinkedIn preview) -->
   <meta property="og:title" content="Antony Paulson Chazhoor — Monetization Analytics" />
   <meta property="og:description" content="Retail media monetization analytics leader: yield insights, measurement, and clear storytelling." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.antonypaulson.com/" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://www.antonypaulson.com/profile-photo.jpg" />
+  <meta property="og:image:alt" content="Antony Paulson Chazhoor working at a laptop" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Antony Paulson Chazhoor" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Antony Paulson Chazhoor — Monetization Analytics" />
+  <meta name="twitter:description" content="Retail media monetization analytics leader: yield insights, measurement, and clear storytelling." />
+  <meta name="twitter:image" content="https://www.antonypaulson.com/profile-photo.jpg" />
+  <meta name="twitter:image:alt" content="Antony Paulson Chazhoor working at a laptop" />
+
+  <link rel="preload" as="image" href="profile-photo.webp" type="image/webp" />
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -29,41 +42,41 @@
         <span class="name">Antony Paulson Chazhoor</span>
       </a>
 
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button type="button" class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
 
-      <nav class="links" aria-label="Primary navigation">
+      <nav class="links" id="site-nav" aria-label="Primary navigation">
         <a href="#experience" data-i18n="nav.experience">Experience</a>
         <a href="#impact" data-i18n="nav.impact">Impact</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#education" data-i18n="nav.education">Education</a>
         <a href="#volunteering" data-i18n="nav.volunteering">Volunteering</a>
         <div class="language-switcher">
-          <button class="lang-btn" aria-label="Language selector" id="langBtn">
-            <span class="lang-flag" id="currentFlag">🇺🇸</span>
+          <button type="button" class="lang-btn" id="langBtn" aria-label="Change language, current language English" aria-haspopup="listbox" aria-expanded="false" aria-controls="langMenu">
+            <span class="lang-flag" id="currentFlag" aria-hidden="true">🇺🇸</span>
             <span class="lang-code" id="currentLang">EN</span>
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M2.5 3.5l2.5 2.5 2.5-2.5"/>
             </svg>
           </button>
-          <div class="lang-menu" id="langMenu">
-            <button class="lang-option" data-lang="en" data-flag="🇺🇸">
-              <span class="option-flag">🇺🇸</span>
+          <div class="lang-menu" id="langMenu" role="listbox" aria-label="Languages">
+            <button type="button" class="lang-option" role="option" aria-selected="true" data-lang="en">
+              <span class="option-flag" aria-hidden="true">🇺🇸</span>
               <span>English</span>
             </button>
-            <button class="lang-option" data-lang="es" data-flag="🇪🇸">
-              <span class="option-flag">🇪🇸</span>
+            <button type="button" class="lang-option" role="option" aria-selected="false" data-lang="es">
+              <span class="option-flag" aria-hidden="true">🇪🇸</span>
               <span>Español</span>
             </button>
-            <button class="lang-option" data-lang="de" data-flag="🇩🇪">
-              <span class="option-flag">🇩🇪</span>
+            <button type="button" class="lang-option" role="option" aria-selected="false" data-lang="de">
+              <span class="option-flag" aria-hidden="true">🇩🇪</span>
               <span>Deutsch</span>
             </button>
-            <button class="lang-option" data-lang="hi" data-flag="🇮🇳">
-              <span class="option-flag">🇮🇳</span>
+            <button type="button" class="lang-option" role="option" aria-selected="false" data-lang="hi">
+              <span class="option-flag" aria-hidden="true">🇮🇳</span>
               <span>हिंदी</span>
             </button>
           </div>
@@ -106,25 +119,36 @@
 
         <aside class="heroRight">
           <div class="heroImageWrapper">
-            <img src="profile-photo.jpg" alt="Antony Paulson Chazhoor" class="heroImage" />
+            <picture>
+              <source type="image/webp" srcset="profile-photo.webp" />
+              <img
+                src="profile-photo.jpg"
+                alt="Antony Paulson Chazhoor working at a laptop"
+                class="heroImage"
+                width="640"
+                height="738"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </picture>
           </div>
           <div class="panel">
             <p class="panelTitle" data-i18n="hero.recommendations">Professional Recommendations</p>
 
-            <div class="quote">
+            <blockquote class="quote">
               <p>"Delivers exceptional results with both speed and quality. Combines strong analytical capabilities with deep business acumen."</p>
-              <p class="byline">— Colleague, Walmart Connect</p>
-            </div>
+              <footer class="byline">— Colleague, Walmart Connect</footer>
+            </blockquote>
 
-            <div class="quote">
+            <blockquote class="quote">
               <p>"Proactive leader who excels in cross-functional collaboration. Demonstrates strong ownership and consistently delivers on commitments."</p>
-              <p class="byline">— Manager, Walmart Connect</p>
-            </div>
+              <footer class="byline">— Manager, Walmart Connect</footer>
+            </blockquote>
 
-            <div class="quote">
+            <blockquote class="quote">
               <p>"Exceptional technical skills in Python and SQL, combined with the ability to create dashboards and narratives that drive decision-making across all levels of the organization."</p>
-              <p class="byline">— Stakeholder, Walmart Connect</p>
-            </div>
+              <footer class="byline">— Stakeholder, Walmart Connect</footer>
+            </blockquote>
           </div>
         </aside>
       </div>
@@ -386,624 +410,34 @@
             <h3>Connect</h3>
             <div class="contact">
               <div><span class="label">Email</span> <a class="link" href="mailto:antonypaulson@outlook.com">antonypaulson@outlook.com</a></div>
-              <div><span class="label">LinkedIn</span> <a class="link" href="https://www.linkedin.com/in/antony-paulson" target="_blank" rel="noreferrer">linkedin.com/in/antony-paulson</a></div>
-              <div><span class="label">GitHub</span> <a class="link" href="https://github.com/antonypaulson" target="_blank" rel="noreferrer">github.com/antonypaulson</a></div>
+              <div><span class="label">LinkedIn</span> <a class="link" href="https://www.linkedin.com/in/antony-paulson" target="_blank" rel="noopener noreferrer">linkedin.com/in/antony-paulson</a></div>
+              <div><span class="label">GitHub</span> <a class="link" href="https://github.com/antonypaulson" target="_blank" rel="noopener noreferrer">github.com/antonypaulson</a></div>
             </div>
           </article>
 
           <article class="card subtle">
             <h3>Resume</h3>
             <p class="muted">View my professional experience and download my resume on LinkedIn.</p>
-            <a class="btn ghost" href="https://www.linkedin.com/in/antony-paulson" target="_blank" rel="noreferrer">View on LinkedIn</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/antony-paulson" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
           </article>
         </div>
-
-        <footer class="footer">
-          <p class="muted small">© <span id="year"></span> Antony Paulson Chazhoor • Built on GitHub Pages</p>
-        </footer>
       </div>
     </section>
   </main>
 
-  <button class="back-to-top" aria-label="Back to top" title="Back to top">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+  <footer class="footer">
+    <div class="container">
+      <p class="muted small">© <span id="year">2026</span> Antony Paulson Chazhoor • Built on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
       <path d="M10 15V5M5 10l5-5 5 5"/>
     </svg>
   </button>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Translation system
-    const translations = {
-      en: {
-        nav: {
-          experience: "Experience",
-          impact: "Impact",
-          skills: "Skills",
-          education: "Education",
-          volunteering: "Volunteering",
-          contact: "Contact"
-        },
-        hero: {
-          kicker: "Manager • Monetization Analytics • Retail Media",
-          title: "Driving revenue growth through data-driven monetization strategies.",
-          lead: "Analytics leader specializing in retail media monetization, yield optimization, and product analytics. I transform complex data into actionable insights that drive business decisions and revenue growth. Expert in AI-assisted development, Vibe Coding, and modern AI-powered coding workflows that accelerate delivery and enhance code quality.",
-          viewExperience: "View Experience",
-          connect: "Connect",
-          recommendations: "Professional Recommendations"
-        },
-        sections: {
-          experience: "Professional Experience",
-          experienceDesc: "Progressive leadership in retail media analytics with a strong technical foundation.",
-          impact: "Key Achievements",
-          impactDesc: "Measurable impact across analytics, engineering, and business outcomes.",
-          skills: "Core Competencies",
-          skillsDesc: "Technical expertise and analytical capabilities.",
-          education: "Education",
-          educationDesc: "Advanced degrees in analytics, business administration, and engineering.",
-          volunteering: "Community Engagement",
-          volunteeringDesc: "Dedicated service to community and faith-based organizations.",
-          contact: "Contact",
-          contactDesc: "Open to discussing opportunities and collaborations."
-        },
-        experience: {
-          manager1: {
-            1: "Lead monetization analytics strategy, partnering with cross-functional stakeholders to enhance measurement frameworks and drive data-informed decision-making.",
-            2: "Develop and present executive-level insights and performance narratives that align leadership teams on key metrics and strategic priorities.",
-            3: "Architect scalable analytics workflows using Python and SQL, reducing analysis time by 40% while improving accuracy and reproducibility.",
-            4: "Leverage AI-assisted development and Vibe Coding methodologies to accelerate project delivery, enhance code quality, and maintain high standards in analytics engineering."
-          },
-          manager2: {
-            1: "Owned yield analytics and insights delivery, providing critical data that directly informed monetization strategy and pricing decisions.",
-            2: "Translated complex analytical findings into actionable business recommendations, driving cross-functional alignment and measurable outcomes.",
-            3: "Established standardized reporting frameworks that improved stakeholder visibility into yield performance by 60%."
-          },
-          manager3: {
-            1: "Led advanced analytics initiatives that directly supported monetization strategy and product roadmap decisions.",
-            2: "Built predictive models and measurement frameworks that improved revenue forecasting accuracy and product performance insights.",
-            3: "Collaborated with product and engineering teams to implement data-driven optimizations that increased monetization efficiency."
-          },
-          manager4: {
-            1: "Delivered comprehensive analytics and insights that informed product development and monetization strategy.",
-            2: "Developed key performance indicators and dashboards that enabled data-driven decision-making across product and business teams.",
-            3: "Established analytics best practices and documentation standards that improved team efficiency and knowledge sharing."
-          },
-          engineer: {
-            1: "Built a streaming pipeline from IoT collection into centralized storage using a Databricks Delta Lake architecture.",
-            2: "Reduced AWS storage + instance costs by 88% through deduplication, compute management, and Python ingestion.",
-            3: "Created responsive Python dashboards enabling real-time company-wide data visualization and analytics."
-          },
-          consultant: {
-            1: "Delivered technical consultation for SAP rollout and database performance topics (SAP HANA, Oracle, MS SQL, Sybase).",
-            2: "Completed 200+ technical projects; earned multiple certifications including Certified SAP Associate.",
-            3: "Created knowledge-base documentation used for onboarding and internal reference."
-          }
-        },
-        achievements: {
-          cost: {
-            title: "Cost optimization",
-            pill: "Data Engineering",
-            desc: "Reduced AWS storage + instance costs by 88% via deduplication, resource management, and Python tooling."
-          },
-          volume: {
-            title: "High-volume delivery",
-            pill: "Enterprise Support",
-            desc: "Completed 200+ technical projects across SAP/database work with strong client outcomes."
-          },
-          retail: {
-            title: "Retail media leadership",
-            pill: "Monetization",
-            desc: "Led yield and monetization analytics initiatives that improved measurement accuracy and enabled data-driven strategic decisions across retail media operations."
-          },
-          data: {
-            title: "Data-driven decision making",
-            pill: "Analytics Leadership",
-            desc: "Designed and deployed executive dashboards and analytical frameworks that enable data-driven decision-making across technical and business teams."
-          },
-          ai: {
-            title: "AI-powered development",
-            pill: "Modern Workflows",
-            desc: "Experienced in AI-assisted development and vibe coding, leveraging cutting-edge AI tools to accelerate development cycles and enhance code quality."
-          }
-        }
-      },
-      es: {
-        nav: {
-          experience: "Experiencia",
-          impact: "Impacto",
-          skills: "Habilidades",
-          education: "Educación",
-          volunteering: "Voluntariado",
-          contact: "Contacto"
-        },
-        hero: {
-          kicker: "Gerente • Análisis de Monetización • Medios Minoristas",
-          title: "Impulsando el crecimiento de ingresos a través de estrategias de monetización basadas en datos.",
-          lead: "Líder en análisis especializado en monetización de medios minoristas, optimización de rendimiento y análisis de productos. Transformo datos complejos en insights accionables que impulsan decisiones comerciales y crecimiento de ingresos. Experto en desarrollo asistido por IA, Vibe Coding y flujos de trabajo modernos de codificación impulsados por IA que aceleran la entrega y mejoran la calidad del código.",
-          viewExperience: "Ver Experiencia",
-          connect: "Conectar",
-          recommendations: "Recomendaciones Profesionales"
-        },
-        sections: {
-          experience: "Experiencia Profesional",
-          experienceDesc: "Liderazgo progresivo en análisis de medios minoristas con una base técnica sólida.",
-          impact: "Logros Clave",
-          impactDesc: "Impacto medible en análisis, ingeniería y resultados comerciales.",
-          skills: "Competencias Principales",
-          skillsDesc: "Experiencia técnica y capacidades analíticas.",
-          education: "Educación",
-          educationDesc: "Títulos avanzados en análisis, administración de empresas e ingeniería.",
-          volunteering: "Compromiso Comunitario",
-          volunteeringDesc: "Servicio dedicado a organizaciones comunitarias y basadas en la fe.",
-          contact: "Contacto",
-          contactDesc: "Abierto a discutir oportunidades y colaboraciones."
-        },
-        experience: {
-          manager1: {
-            1: "Liderar estrategia de análisis de monetización, colaborando con partes interesadas multifuncionales para mejorar marcos de medición e impulsar la toma de decisiones basada en datos.",
-            2: "Desarrollar y presentar insights de nivel ejecutivo y narrativas de rendimiento que alinean equipos de liderazgo en métricas clave y prioridades estratégicas.",
-            3: "Arquitecturar flujos de trabajo de análisis escalables usando Python y SQL, reduciendo el tiempo de análisis en 40% mientras se mejora la precisión y reproducibilidad.",
-            4: "Aprovechar metodologías de desarrollo asistido por IA y Vibe Coding para acelerar la entrega de proyectos, mejorar la calidad del código y mantener altos estándares en ingeniería de análisis."
-          },
-          manager2: {
-            1: "Gestioné análisis de rendimiento y entrega de insights, proporcionando datos críticos que informaron directamente la estrategia de monetización y decisiones de precios.",
-            2: "Traduje hallazgos analíticos complejos en recomendaciones comerciales accionables, impulsando alineación multifuncional y resultados medibles.",
-            3: "Establecí marcos de informes estandarizados que mejoraron la visibilidad de las partes interesadas en el rendimiento de yield en un 60%."
-          },
-          manager3: {
-            1: "Lideré iniciativas de análisis avanzado que apoyaron directamente decisiones de estrategia de monetización y hoja de ruta de productos.",
-            2: "Construí modelos predictivos y marcos de medición que mejoraron la precisión de pronósticos de ingresos e insights de rendimiento de productos.",
-            3: "Colaboré con equipos de producto e ingeniería para implementar optimizaciones basadas en datos que aumentaron la eficiencia de monetización."
-          },
-          manager4: {
-            1: "Entregué análisis e insights integrales que informaron el desarrollo de productos y la estrategia de monetización.",
-            2: "Desarrollé indicadores clave de rendimiento y dashboards que permitieron la toma de decisiones basada en datos en equipos de producto y negocios.",
-            3: "Establecí mejores prácticas de análisis y estándares de documentación que mejoraron la eficiencia del equipo y el intercambio de conocimientos."
-          },
-          engineer: {
-            1: "Construí una canalización de transmisión desde la recopilación de IoT hasta almacenamiento centralizado usando una arquitectura Databricks Delta Lake.",
-            2: "Reduje los costos de almacenamiento e instancias de AWS en 88% mediante deduplicación, gestión de cómputo e ingestión de Python.",
-            3: "Creé dashboards responsivos de Python que permiten visualización de datos y análisis en tiempo real en toda la empresa."
-          },
-          consultant: {
-            1: "Proporcioné consultoría técnica para implementación de SAP y temas de rendimiento de bases de datos (SAP HANA, Oracle, MS SQL, Sybase).",
-            2: "Completé más de 200 proyectos técnicos; obtuve múltiples certificaciones incluyendo Asociado Certificado de SAP.",
-            3: "Creé documentación de base de conocimientos utilizada para incorporación y referencia interna."
-          }
-        },
-        achievements: {
-          cost: {
-            title: "Optimización de costos",
-            pill: "Ingeniería de Datos",
-            desc: "Reduje los costos de almacenamiento e instancias de AWS en 88% mediante deduplicación, gestión de recursos y herramientas de Python."
-          },
-          volume: {
-            title: "Entrega de alto volumen",
-            pill: "Soporte Empresarial",
-            desc: "Completé más de 200 proyectos técnicos en trabajo SAP/base de datos con fuertes resultados para clientes."
-          },
-          retail: {
-            title: "Liderazgo en medios minoristas",
-            pill: "Monetización",
-            desc: "Lideré iniciativas de análisis de yield y monetización que mejoraron la precisión de medición y permitieron decisiones estratégicas basadas en datos en operaciones de medios minoristas."
-          },
-          data: {
-            title: "Toma de decisiones basada en datos",
-            pill: "Liderazgo en Análisis",
-            desc: "Diseñé e implementé dashboards ejecutivos y marcos analíticos que permiten la toma de decisiones basada en datos en equipos técnicos y comerciales."
-          },
-          ai: {
-            title: "Desarrollo impulsado por IA",
-            pill: "Flujos de Trabajo Modernos",
-            desc: "Experimentado en desarrollo asistido por IA y codificación intuitiva, aprovechando herramientas de IA de vanguardia para acelerar ciclos de desarrollo y mejorar la calidad del código."
-          }
-        }
-      },
-      de: {
-        nav: {
-          experience: "Erfahrung",
-          impact: "Wirkung",
-          skills: "Fähigkeiten",
-          education: "Bildung",
-          volunteering: "Ehrenamt",
-          contact: "Kontakt"
-        },
-        hero: {
-          kicker: "Manager • Monetarisierungsanalyse • Einzelhandelsmedien",
-          title: "Umsatzwachstum durch datengesteuerte Monetarisierungsstrategien vorantreiben.",
-          lead: "Analytics-Leiter mit Spezialisierung auf Einzelhandelsmedien-Monetarisierung, Yield-Optimierung und Produktanalysen. Ich transformiere komplexe Daten in umsetzbare Erkenntnisse, die Geschäftsentscheidungen und Umsatzwachstum vorantreiben. Experte in KI-unterstützter Entwicklung, Vibe Coding und modernen KI-gestützten Codierungs-Workflows, die die Lieferung beschleunigen und die Codequalität verbessern.",
-          viewExperience: "Erfahrung anzeigen",
-          connect: "Verbinden",
-          recommendations: "Professionelle Empfehlungen"
-        },
-        sections: {
-          experience: "Berufserfahrung",
-          experienceDesc: "Fortschrittliche Führung in Einzelhandelsmedien-Analysen mit starker technischer Grundlage.",
-          impact: "Wichtige Erfolge",
-          impactDesc: "Messbare Auswirkungen in Analyse, Engineering und Geschäftsergebnissen.",
-          skills: "Kernkompetenzen",
-          skillsDesc: "Technische Expertise und analytische Fähigkeiten.",
-          education: "Bildung",
-          educationDesc: "Fortgeschrittene Abschlüsse in Analyse, Betriebswirtschaft und Ingenieurwesen.",
-          volunteering: "Gemeinschaftliches Engagement",
-          volunteeringDesc: "Hingebungsvoller Dienst an Gemeinschafts- und glaubensbasierten Organisationen.",
-          contact: "Kontakt",
-          contactDesc: "Offen für Diskussionen über Möglichkeiten und Zusammenarbeit."
-        },
-        experience: {
-          manager1: {
-            1: "Leitung der Monetarisierungsanalyse-Strategie, Partnerschaft mit funktionsübergreifenden Stakeholdern zur Verbesserung von Messframeworks und datengestützter Entscheidungsfindung.",
-            2: "Entwicklung und Präsentation von Erkenntnissen auf Führungsebene und Leistungsnarrativen, die Führungsteams auf Schlüsselkennzahlen und strategische Prioritäten ausrichten.",
-            3: "Architektur skalierbarer Analyse-Workflows mit Python und SQL, Reduzierung der Analysezeit um 40% bei gleichzeitiger Verbesserung von Genauigkeit und Reproduzierbarkeit.",
-            4: "Nutzung von KI-unterstützten Entwicklungs- und Vibe Coding-Methodologien zur Beschleunigung der Projektlieferung, Verbesserung der Codequalität und Aufrechterhaltung hoher Standards in der Analyse-Engineering."
-          },
-          manager2: {
-            1: "Verantwortung für Yield-Analysen und Insights-Lieferung, Bereitstellung kritischer Daten, die Monetarisierungsstrategie und Preisentscheidungen direkt informierten.",
-            2: "Übersetzung komplexer analytischer Erkenntnisse in umsetzbare Geschäftsempfehlungen, Förderung funktionsübergreifender Ausrichtung und messbarer Ergebnisse.",
-            3: "Etablierung standardisierter Reporting-Frameworks, die die Stakeholder-Sichtbarkeit in die Yield-Leistung um 60% verbesserten."
-          },
-          manager3: {
-            1: "Leitung erweiterter Analyse-Initiativen, die Monetarisierungsstrategie und Produkt-Roadmap-Entscheidungen direkt unterstützten.",
-            2: "Aufbau prädiktiver Modelle und Messframeworks, die die Genauigkeit der Umsatzprognose und Produktleistungs-Erkenntnisse verbesserten.",
-            3: "Zusammenarbeit mit Produkt- und Engineering-Teams zur Implementierung datengesteuerter Optimierungen, die die Monetarisierungseffizienz erhöhten."
-          },
-          manager4: {
-            1: "Lieferung umfassender Analysen und Erkenntnisse, die Produktentwicklung und Monetarisierungsstrategie informierten.",
-            2: "Entwicklung von Leistungskennzahlen und Dashboards, die datengesteuerte Entscheidungsfindung in Produkt- und Geschäftsteams ermöglichten.",
-            3: "Etablierung von Analyse-Best-Practices und Dokumentationsstandards, die Team-Effizienz und Wissensaustausch verbesserten."
-          },
-          engineer: {
-            1: "Aufbau einer Streaming-Pipeline von IoT-Sammlung in zentralisierten Speicher mit einer Databricks Delta Lake-Architektur.",
-            2: "Reduzierung der AWS-Speicher- und Instanzkosten um 88% durch Deduplizierung, Compute-Management und Python-Erfassung.",
-            3: "Erstellung responsiver Python-Dashboards, die Echtzeit-Datenvisualisierung und -analyse unternehmensweit ermöglichen."
-          },
-          consultant: {
-            1: "Lieferung technischer Beratung für SAP-Rollout und Datenbankleistungsthemen (SAP HANA, Oracle, MS SQL, Sybase).",
-            2: "Abschluss von über 200 technischen Projekten; Erwerb mehrerer Zertifizierungen einschließlich zertifizierter SAP-Associate.",
-            3: "Erstellung von Wissensdatenbank-Dokumentation für Onboarding und interne Referenz."
-          }
-        },
-        achievements: {
-          cost: {
-            title: "Kostenoptimierung",
-            pill: "Datenengineering",
-            desc: "Reduzierung der AWS-Speicher- und Instanzkosten um 88% durch Deduplizierung, Ressourcenmanagement und Python-Tools."
-          },
-          volume: {
-            title: "Hochvolumen-Lieferung",
-            pill: "Unternehmenssupport",
-            desc: "Abschluss von über 200 technischen Projekten in SAP/Datenbankarbeit mit starken Kundenresultaten."
-          },
-          retail: {
-            title: "Einzelhandelsmedien-Führung",
-            pill: "Monetarisierung",
-            desc: "Leitung von Yield- und Monetarisierungsanalyse-Initiativen, die Messgenauigkeit verbesserten und datengesteuerte strategische Entscheidungen in Einzelhandelsmedien-Operationen ermöglichten."
-          },
-          data: {
-            title: "Datengesteuerte Entscheidungsfindung",
-            pill: "Analyse-Führung",
-            desc: "Design und Bereitstellung von Führungsdashboards und analytischen Frameworks, die datengesteuerte Entscheidungsfindung in technischen und Geschäftsteams ermöglichen."
-          },
-          ai: {
-            title: "KI-gestützte Entwicklung",
-            pill: "Moderne Workflows",
-            desc: "Erfahren in KI-unterstützter Entwicklung und intuitiver Codierung, Nutzung modernster KI-Tools zur Beschleunigung von Entwicklungszyklen und Verbesserung der Codequalität."
-          }
-        }
-      },
-      hi: {
-        nav: {
-          experience: "अनुभव",
-          impact: "प्रभाव",
-          skills: "कौशल",
-          education: "शिक्षा",
-          volunteering: "स्वैच्छिक सेवा",
-          contact: "संपर्क"
-        },
-        hero: {
-          kicker: "प्रबंधक • मुद्रीकरण विश्लेषण • खुदरा मीडिया",
-          title: "डेटा-संचालित मुद्रीकरण रणनीतियों के माध्यम से राजस्व वृद्धि को बढ़ावा देना।",
-          lead: "खुदरा मीडिया मुद्रीकरण, उपज अनुकूलन और उत्पाद विश्लेषण में विशेषज्ञता वाला विश्लेषण नेता। मैं जटिल डेटा को व्यावहारिक अंतर्दृष्टि में बदलता हूं जो व्यावसायिक निर्णय और राजस्व वृद्धि को बढ़ावा देता है। AI-सहायक विकास, Vibe Coding और आधुनिक AI-संचालित कोडिंग वर्कफ़्लोज़ में विशेषज्ञ जो वितरण को तेज करते हैं और कोड गुणवत्ता बढ़ाते हैं।",
-          viewExperience: "अनुभव देखें",
-          connect: "जुड़ें",
-          recommendations: "पेशेवर सिफारिशें"
-        },
-        sections: {
-          experience: "पेशेवर अनुभव",
-          experienceDesc: "मजबूत तकनीकी नींव के साथ खुदरा मीडिया विश्लेषण में प्रगतिशील नेतृत्व।",
-          impact: "मुख्य उपलब्धियां",
-          impactDesc: "विश्लेषण, इंजीनियरिंग और व्यावसायिक परिणामों में मापने योग्य प्रभाव।",
-          skills: "मुख्य योग्यताएं",
-          skillsDesc: "तकनीकी विशेषज्ञता और विश्लेषणात्मक क्षमताएं।",
-          education: "शिक्षा",
-          educationDesc: "विश्लेषण, व्यवसाय प्रशासन और इंजीनियरिंग में उन्नत डिग्री।",
-          volunteering: "सामुदायिक सगाई",
-          volunteeringDesc: "सामुदायिक और विश्वास-आधारित संगठनों के लिए समर्पित सेवा।",
-          contact: "संपर्क",
-          contactDesc: "अवसरों और सहयोग पर चर्चा करने के लिए खुला।"
-        },
-        experience: {
-          manager1: {
-            1: "मुद्रीकरण विश्लेषण रणनीति का नेतृत्व करना, मापन ढांचे को बढ़ाने और डेटा-सूचित निर्णय लेने के लिए क्रॉस-फंक्शनल हितधारकों के साथ साझेदारी करना।",
-            2: "कार्यकारी-स्तरीय अंतर्दृष्टि और प्रदर्शन कथाएं विकसित करना और प्रस्तुत करना जो नेतृत्व टीमों को प्रमुख मेट्रिक्स और रणनीतिक प्राथमिकताओं पर संरेखित करती हैं।",
-            3: "Python और SQL का उपयोग करके स्केलेबल विश्लेषण वर्कफ़्लोज़ का निर्माण करना, सटीकता और पुनरुत्पादनशीलता में सुधार करते हुए विश्लेषण समय को 40% कम करना।",
-            4: "प्रोजेक्ट वितरण को तेज करने, कोड गुणवत्ता बढ़ाने और विश्लेषण इंजीनियरिंग में उच्च मानकों को बनाए रखने के लिए AI-सहायक विकास और Vibe Coding पद्धतियों का लाभ उठाना।"
-          },
-          manager2: {
-            1: "उपज विश्लेषण और अंतर्दृष्टि वितरण का स्वामित्व, महत्वपूर्ण डेटा प्रदान करना जो सीधे मुद्रीकरण रणनीति और मूल्य निर्धारण निर्णयों को सूचित करता है।",
-            2: "जटिल विश्लेषणात्मक निष्कर्षों को व्यावहारिक व्यावसायिक सिफारिशों में अनुवाद करना, क्रॉस-फंक्शनल संरेखण और मापने योग्य परिणामों को बढ़ावा देना।",
-            3: "मानकीकृत रिपोर्टिंग ढांचे स्थापित करना जिन्होंने हितधारक दृश्यता को उपज प्रदर्शन में 60% तक बेहतर बनाया।"
-          },
-          manager3: {
-            1: "उन्नत विश्लेषण पहलों का नेतृत्व करना जो सीधे मुद्रीकरण रणनीति और उत्पाद रोडमैप निर्णयों का समर्थन करते हैं।",
-            2: "भविष्य कथन मॉडल और मापन ढांचे का निर्माण करना जिन्होंने राजस्व पूर्वानुमान सटीकता और उत्पाद प्रदर्शन अंतर्दृष्टि में सुधार किया।",
-            3: "उत्पाद और इंजीनियरिंग टीमों के साथ सहयोग करना डेटा-संचालित अनुकूलन लागू करने के लिए जिन्होंने मुद्रीकरण दक्षता बढ़ाई।"
-          },
-          manager4: {
-            1: "व्यापक विश्लेषण और अंतर्दृष्टि वितरित करना जो उत्पाद विकास और मुद्रीकरण रणनीति को सूचित करते हैं।",
-            2: "प्रमुख प्रदर्शन संकेतक और डैशबोर्ड विकसित करना जो उत्पाद और व्यावसायिक टीमों में डेटा-संचालित निर्णय लेने को सक्षम करते हैं।",
-            3: "विश्लेषण सर्वोत्तम प्रथाओं और दस्तावेज़ीकरण मानकों की स्थापना करना जिन्होंने टीम दक्षता और ज्ञान साझाकरण में सुधार किया।"
-          },
-          engineer: {
-            1: "Databricks Delta Lake आर्किटेक्चर का उपयोग करके IoT संग्रह से केंद्रीकृत भंडारण तक एक स्ट्रीमिंग पाइपलाइन का निर्माण करना।",
-            2: "डेडुप्लिकेशन, कंप्यूट प्रबंधन, और Python इनजेक्शन के माध्यम से AWS भंडारण + उदाहरण लागत को 88% कम करना।",
-            3: "रियल-टाइम कंपनी-व्यापी डेटा विज़ुअलाइज़ेशन और विश्लेषण को सक्षम करने वाले रेस्पॉन्सिव Python डैशबोर्ड बनाना।"
-          },
-          consultant: {
-            1: "SAP रोलआउट और डेटाबेस प्रदर्शन विषयों (SAP HANA, Oracle, MS SQL, Sybase) के लिए तकनीकी परामर्श प्रदान करना।",
-            2: "200+ तकनीकी परियोजनाएं पूरी कीं; प्रमाणित SAP Associate सहित कई प्रमाणपत्र अर्जित किए।",
-            3: "ऑनबोर्डिंग और आंतरिक संदर्भ के लिए उपयोग की जाने वाली ज्ञान-आधार दस्तावेज़ीकरण बनाना।"
-          }
-        },
-        achievements: {
-          cost: {
-            title: "लागत अनुकूलन",
-            pill: "डेटा इंजीनियरिंग",
-            desc: "डेडुप्लिकेशन, संसाधन प्रबंधन, और Python टूलिंग के माध्यम से AWS भंडारण + उदाहरण लागत को 88% कम किया।"
-          },
-          volume: {
-            title: "उच्च-मात्रा वितरण",
-            pill: "एंटरप्राइज़ सपोर्ट",
-            desc: "SAP/डेटाबेस कार्य में मजबूत ग्राहक परिणामों के साथ 200+ तकनीकी परियोजनाएं पूरी कीं।"
-          },
-          retail: {
-            title: "खुदरा मीडिया नेतृत्व",
-            pill: "मुद्रीकरण",
-            desc: "उपज और मुद्रीकरण विश्लेषण पहलों का नेतृत्व करना जिन्होंने मापन सटीकता में सुधार किया और खुदरा मीडिया संचालन में डेटा-संचालित रणनीतिक निर्णयों को सक्षम किया।"
-          },
-          data: {
-            title: "डेटा-संचालित निर्णय लेना",
-            pill: "विश्लेषण नेतृत्व",
-            desc: "कार्यकारी डैशबोर्ड और विश्लेषणात्मक ढांचे डिज़ाइन और तैनात करना जो तकनीकी और व्यावसायिक टीमों में डेटा-संचालित निर्णय लेने को सक्षम करते हैं।"
-          },
-          ai: {
-            title: "AI-संचालित विकास",
-            pill: "आधुनिक वर्कफ़्लोज़",
-            desc: "AI-सहायक विकास और वाइब कोडिंग में अनुभवी, विकास चक्रों को तेज करने और कोड गुणवत्ता बढ़ाने के लिए अत्याधुनिक AI उपकरणों का लाभ उठाना।"
-          }
-        }
-      }
-    };
-
-    // Language management
-    let currentLang = localStorage.getItem('preferredLanguage') || 'en';
-
-    function setLanguage(lang) {
-      currentLang = lang;
-      localStorage.setItem('preferredLanguage', lang);
-      document.documentElement.lang = lang;
-      
-      // Update language button with flag and code
-      const langData = { 
-        en: { code: 'EN', flag: '🇺🇸' }, 
-        es: { code: 'ES', flag: '🇪🇸' }, 
-        de: { code: 'DE', flag: '🇩🇪' }, 
-        hi: { code: 'HI', flag: '🇮🇳' } 
-      };
-      const current = langData[lang] || langData.en;
-      document.getElementById('currentFlag').textContent = current.flag;
-      document.getElementById('currentLang').textContent = current.code;
-      
-      // Translate all elements with data-i18n attribute
-      document.querySelectorAll('[data-i18n]').forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        const keys = key.split('.');
-        let translation = translations[lang];
-        
-        for (const k of keys) {
-          translation = translation?.[k];
-        }
-        
-        if (translation) {
-          // Check if element contains HTML (like <strong> tags)
-          if (element.innerHTML.includes('<strong>')) {
-            // Preserve HTML structure
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = translation;
-            element.innerHTML = tempDiv.innerHTML;
-          } else {
-            element.textContent = translation;
-          }
-        }
-      });
-      
-      // Close language menu
-      document.getElementById('langMenu').classList.remove('active');
-    }
-
-    // Initialize language
-    setLanguage(currentLang);
-
-    // Language switcher functionality
-    const langBtn = document.getElementById('langBtn');
-    const langMenu = document.getElementById('langMenu');
-
-    langBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langMenu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.lang-option').forEach(option => {
-      option.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const lang = option.getAttribute('data-lang');
-        const flag = option.getAttribute('data-flag');
-        setLanguage(lang);
-      });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', () => {
-      langMenu.classList.remove('active');
-    });
-
-    // Smooth scrolling with offset for sticky header
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href === '#' || href === '#top') return;
-        
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          const headerOffset = 80;
-          const elementPosition = target.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-          
-          // Close mobile menu if open
-          const menuToggle = document.querySelector('.menu-toggle');
-          const navLinks = document.querySelector('.links');
-          if (menuToggle && navLinks && menuToggle.getAttribute('aria-expanded') === 'true') {
-            menuToggle.setAttribute('aria-expanded', 'false');
-            navLinks.classList.remove('menu-open');
-            navLinks.setAttribute('aria-hidden', 'true');
-          }
-        }
-      });
-    });
-
-    // Mobile hamburger menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.links');
-    
-    if (menuToggle && navLinks) {
-      menuToggle.addEventListener('click', function() {
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !isExpanded);
-        navLinks.classList.toggle('menu-open');
-        navLinks.setAttribute('aria-hidden', isExpanded);
-      });
-      
-      // Close menu when clicking outside
-      document.addEventListener('click', function(e) {
-        if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-          if (menuToggle.getAttribute('aria-expanded') === 'true') {
-            menuToggle.setAttribute('aria-expanded', 'false');
-            navLinks.classList.remove('menu-open');
-            navLinks.setAttribute('aria-hidden', 'true');
-          }
-        }
-      });
-      
-      // Initialize aria-hidden
-      navLinks.setAttribute('aria-hidden', 'true');
-      
-      // Close menu on Escape key
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-          menuToggle.setAttribute('aria-expanded', 'false');
-          navLinks.classList.remove('menu-open');
-          navLinks.setAttribute('aria-hidden', 'true');
-        }
-      });
-    }
-
-    // Active navigation highlighting
-    const sections = document.querySelectorAll('section[id]');
-    const navAnchors = document.querySelectorAll('.links a[href^="#"]');
-    
-    function updateActiveNav() {
-      const scrollPos = window.scrollY + 120;
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        
-        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-          navAnchors.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${sectionId}`) {
-              link.classList.add('active');
-            }
-          });
-        }
-      });
-      
-      // Handle top section
-      if (window.scrollY < 100) {
-        navAnchors.forEach(link => link.classList.remove('active'));
-      }
-    }
-    
-    window.addEventListener('scroll', updateActiveNav);
-    updateActiveNav(); // Initial check
-
-    // Back to top button
-    const backToTopBtn = document.querySelector('.back-to-top');
-    
-    if (backToTopBtn) {
-      function toggleBackToTop() {
-        if (window.scrollY > 300) {
-          backToTopBtn.classList.add('visible');
-        } else {
-          backToTopBtn.classList.remove('visible');
-        }
-      }
-      
-      window.addEventListener('scroll', toggleBackToTop);
-      toggleBackToTop(); // Initial check
-      
-      backToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-    }
-
-    // Scroll-triggered fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    // Observe all sections
-    document.querySelectorAll('.section').forEach(section => {
-      observer.observe(section);
-    });
-
-    // Make hero section visible immediately (no animation delay)
-    const heroSection = document.querySelector('.hero');
-    if (heroSection) {
-      heroSection.style.opacity = '1';
-      heroSection.style.transform = 'translateY(0)';
-    }
-  </script>
+  <script src="site.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -1013,6 +447,7 @@
     "jobTitle":"Manager, Monetization Analytics",
     "url":"https://www.antonypaulson.com/",
     "email":"mailto:antonypaulson@outlook.com",
+    "image":"https://www.antonypaulson.com/profile-photo.jpg",
     "sameAs":[
       "https://www.linkedin.com/in/antony-paulson",
       "https://github.com/antonypaulson"
